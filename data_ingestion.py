@@ -26,4 +26,4 @@ for file in files:
     print(df.head())
 
     print("\nMissing Values:")
-    print(df.isnull().sum())
+    print(df.isnull().sum()) 
