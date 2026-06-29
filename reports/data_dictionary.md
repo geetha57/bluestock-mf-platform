@@ -1,43 +1,39 @@
 # Data Dictionary
 
-## Axis_Bluechip
+## fund_master.csv
+- amfi_code : Unique AMFI scheme code
+- scheme_name : Name of the mutual fund scheme
+- fund_house : Mutual fund company
+- category : Fund category
+- sub_category : Fund sub-category
+- plan : Direct/Regular plan
+- risk_category : Risk classification
 
-| Column | Data Type | Description |
-|--------|-----------|-------------|
-| date | DATE | NAV date |
-| nav | REAL | Net Asset Value |
+## nav_history.csv
+- amfi_code : Scheme code
+- date : NAV date
+- nav : Net Asset Value
 
-## ICICI_Bluechip
+## investor_transactions.csv
+- investor_id : Unique investor ID
+- transaction_date : Date of transaction
+- transaction_type : SIP/Lumpsum/Redemption
+- amount_inr : Transaction amount
+- state : Investor state
+- city : Investor city
+- city_tier : T30/B30 classification
+- gender : Investor gender
+- kyc_status : KYC verification status
 
-| Column | Data Type | Description |
-|--------|-----------|-------------|
-| date | DATE | NAV date |
-| nav | REAL | Net Asset Value |
+## scheme_performance.csv
+- return_1yr_pct : 1-year return
+- return_3yr_pct : 3-year return
+- return_5yr_pct : 5-year return
+- expense_ratio_pct : Expense ratio
+- sharpe_ratio : Sharpe ratio
+- risk_grade : Risk level
 
-## Kotak_Bluechip
-
-| Column | Data Type | Description |
-|--------|-----------|-------------|
-| date | DATE | NAV date |
-| nav | REAL | Net Asset Value |
-
-## Nippon_LargeCap
-
-| Column | Data Type | Description |
-|--------|-----------|-------------|
-| date | DATE | NAV date |
-| nav | REAL | Net Asset Value |
-
-## SBI_Bluechip
-
-| Column | Data Type | Description |
-|--------|-----------|-------------|
-| date | DATE | NAV date |
-| nav | REAL | Net Asset Value |
-
-## HDFC_Top100_Live_NAV
-
-| Column | Data Type | Description |
-|--------|-----------|-------------|
-| date | DATE | NAV date |
-| nav | REAL | Net Asset Value |
+## aum_by_fund_house.csv
+- fund_house : Fund house name
+- year : Financial year
+- aum_crore : Assets Under Management (₹ Crore)
